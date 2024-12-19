@@ -1,7 +1,12 @@
+<svelte:head>
+    <title>
+        Slowly Garden
+    </title> 
+</svelte:head>
 <p
     style="color: #538b72;"
     >Current Interests</p>
-<p>Komorebi, Trees, Fire Making, Christopher Alexander</p>
+<p>Komorebi 木漏れ日, Trees, Fire Making, Christopher Alexander</p>
 
 <style>
 :global(body) {

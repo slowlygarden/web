@@ -1,25 +1,96 @@
 <svelte:head>
-    <title>
-        Slowly Garden
-    </title> 
+  <title>Garden</title>
 </svelte:head>
-<p
-    style="color: #538b72;"
-    >Current Interests</p>
-<p>Komorebi 木漏れ日, Trees, Fire Making, Christopher Alexander</p>
+
+<main>
+  <h1>mohan is slowly gardening...</h1>
+
+  <div class="list">
+    <div class="thing">
+      <div class="token"></div>
+      <p>planting, tending, and pruning</p>
+    </div>
+    <div class="thing">
+      <div class="token"></div>
+      <p>
+        reading
+        <a
+          href="https://en.wikipedia.org/wiki/Notes_on_the_Synthesis_of_Form"
+          target="_blank">Notes on the Synthesis of Form</a
+        >
+      </p>
+    </div>
+  </div>
+</main>
 
 <style>
-:global(body) {
-    background-color: #171717;
-    color: #b9b9b9;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+  h1 {
+    color: #3c3c3c;
+    font-size: 14px;
+
+    margin-bottom: 40px;
+  }
+
+  p {
+    color: #a4a4a4;
+  }
+
+  main {
+    margin-top: 100px;
+  }
+
+  a {
+    color: #a4a4a4;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #3c3c3c;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .thing {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .token {
+    height: 8px;
+    width: 8px;
+    rotate: 45deg;
+
+    background: #5a941c;
+  }
+
+  :global(body) {
+    background-color: #101010;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+
     max-width: 600px;
     margin: 0 auto;
-    padding: 60px 20px;
-}
+    padding: 20px;
+  }
 
-:global(a) {
-    color: #44797f;
-    text-decoration: none;
-}
+  :global(*) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-weight: 500;
+  }
+
+  ::selection {
+    color: #7a8a14;
+    background: #243a0d;
+  }
 </style>

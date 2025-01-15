@@ -68,6 +68,7 @@
     rotate: 45deg;
 
     background: #5a941c;
+    border-radius: 2px;
   }
 
   :global(body) {

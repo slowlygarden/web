@@ -87,7 +87,7 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   ::selection {
